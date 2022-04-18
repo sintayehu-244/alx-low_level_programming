@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts2 - check the code 
+ * puts2 - check the code for Holberton School students.
  * @str: pointer int type
  * Return: Always 0.
  */
@@ -15,5 +15,4 @@ _putchar(*str);
 str++;
 }
 _putchar('\n');
-
 }
