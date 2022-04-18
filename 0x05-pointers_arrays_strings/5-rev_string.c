@@ -1,29 +1,30 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * rev_string - check the code for Holberton School students.
- * @s: pointer int type
- * Return: Always 0.
+ * rev_string - reverse a string.
+ *
+ *@s: the string to be reversed.
  */
+
 void rev_string(char *s)
 {
-int i, j;
-char temp[500];
+int length, j, i;
+char v1, v2;
 
-for (i = 0; *s != '\0'; i++)
+for (length = 0; s[length] != '\0'; length++)
 {
-temp[i] = *s;
-s++;
 }
 
-s--;
+j = length - 1;
+i = 0;
 
-for (j = 0; j != i; j++)
+while (j > i)
 {
-*s = temp[j];
-s--;
+v1 = s[i];
+v2 = s[j];
+s[i] = v2;
+s[j] = v1;
+j--;
+i++;
 }
-
-s++;
-
 }
