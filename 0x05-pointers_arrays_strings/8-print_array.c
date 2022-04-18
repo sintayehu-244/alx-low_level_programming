@@ -1,25 +1,23 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * print_array - check the code 
- * @a: pointer int type
- * @n: is a int variable
- * Return: Always 0.
+ * print_array - print an array.
+ * @a: the array to print.
+ * @n: array's length
  */
+
 void print_array(int *a, int n)
 {
-int i, inte;
+int i;
 
 for (i = 0; i < n; i++)
 {
-
-inte = *(a + i);
-
-printf("%d", inte);
-
-if (i != n - 1)
+printf("%d", a[i]);
+if (i < n - 1)
+{
 printf(", ");
 }
-
+}
 printf("\n");
 }
