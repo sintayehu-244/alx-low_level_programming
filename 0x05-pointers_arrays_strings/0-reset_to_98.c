@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - check the code for Holberton School students.
+ * reset_to_98 - check the code 
  * @n: is a pointer int type
  * Return: Always 0.
  */
