@@ -1,10 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * @dest: pointer char type
- * @src: pointer char type
- * Return: Always 0.
+ * *_strcpy - copies the string pointed to by src, including \0.
+ *@src: pointer.
+ *@dest: pointer.
+ *Return: the pointer to dest.
  */
+
 char *_strcpy(char *dest, char *src)
 {
 int i;
