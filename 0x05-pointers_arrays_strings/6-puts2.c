@@ -1,18 +1,21 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * puts2 - check the code for Holberton School students.
- * @str: pointer int type
- * Return: Always 0.
+ * puts2 - prints every other character of a string.
+ *@str: the string to use.
  */
+
 void puts2(char *str)
 {
-int i;
-for (i = 0; *str != '\0'; i++)
+int i = 0;
+
+while (str[i] != '\0')
 {
 if (i % 2 == 0)
-_putchar(*str);
-str++;
+{
+_putchar(str[i]);
+}
+i++;
 }
 _putchar('\n');
 }
