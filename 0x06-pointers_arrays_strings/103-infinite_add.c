@@ -78,5 +78,5 @@ r[j] += '0';
 }
 if (j == i)
 r[i] += '0';
-return (r);
+return (0);
 }
