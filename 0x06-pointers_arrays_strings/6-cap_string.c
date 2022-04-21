@@ -1,26 +1,33 @@
-#include<main.h>
+#include "main.h"
 /**
- * Write a function that capitalizes all words of a string
+ * cap_string- a function to function that capitalizes all words of a string
  * @s: that's our string
  *
  *
  *
  * Return: answer
  */
-char *cap_string(char *string);
+char *cap_string(char *s)
 {
 int i = 0;
 int z = 1;
 char *answer = s;
 char *spesh = " \t\n;,.!?\"(){}\0";
-while(*string)
 
+while (*s)
 {
-if ( *string >= 'a' && *string <= 'z' )
+if (z)
 {
-*string = *string - 32;
+if (*s >= 'a' && *s <= 'z')
+*s = *s - 32;
+z = 0;
 }
-string++;
+for (i = 0; spesh[i]; i++)
+{
+if (*s == spesh[i])
+z = 1;
+}
+s++;
 }
 return (answer);
 }
