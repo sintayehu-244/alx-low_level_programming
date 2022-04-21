@@ -56,5 +56,5 @@ digit = (value3 % 10);
 value3 = (value3 - digit);
 r[count] = digit + '0';
 }
-return (p);
+return (0);
 }
