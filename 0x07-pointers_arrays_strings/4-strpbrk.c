@@ -13,7 +13,7 @@ int a = 0, b;
 
 while (s[a])
 {
-b= 0;
+b = 0;
 
 while (accept[b])
 {
