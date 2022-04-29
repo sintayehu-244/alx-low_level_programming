@@ -1,22 +1,26 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - Program that prints the result  that multiplies two numbers.
- * @argc: count
- * @argv: array
- *
- * Return: Always 0
+ * main - multiply two numbers
+ * @argc: arguement count
+ * @argv: array of pointers to arguement strings
+ * Return: result of multiplication or 1
  **/
 int main(int argc, char *argv[])
 {
-(void) argc;
-if (*(argv + 1) == '\0' || *(argv + 2) == '\0')
+int a, b, result;
+
+if (argc <= 2)
 {
 printf("Error\n");
 return (1);
 }
-else
-printf("%d\n", (atoi(*(argv + 1)) * atoi(*(argv + 2))));
+/* atoi convert a string to an int */
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+result = a * b;
+printf("%d\n", result);
 return (0);
 }
