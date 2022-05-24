@@ -1,4 +1,4 @@
-i/*
+/*
  * File: 8-sum_listint.c
  * Auth: Brennan D Baraban
  */
@@ -15,11 +15,13 @@ i/*
  */
 int sum_listint(listint_t *head)
 {
-int sum=0;
+int sum = 0;
+
 while (head)
 {
 sum += head->n;
 head = head->next;
 }
+
 return (sum);
 }
